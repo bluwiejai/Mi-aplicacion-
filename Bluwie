@@ -1,0 +1,42 @@
+Actúa como un desarrollador experto en Python, Streamlit y diseñador UI/UX especializado en conceptos de pastelería artística y alta repostería.
+
+Por favor, escribe el código completo en un solo archivo Python (.py) para una página web interactiva de Streamlit para una pastelería de diseño exclusivo llamada "Starry Ocean Pâtisserie" (Pastelería El Océano Estrellado).
+
+La temática principal de la pastelería combina el arte de Van Gogh (pinceladas, cielo estrellado, texturas pictóricas) con la elegancia del océano y toques dorados lujosos.
+
+El código debe incluir los siguientes elementos:
+
+1. **Configuración de la Página y Estilos Visuales (CSS Personalizado):**
+   - Usa un layout ancho (`layout="wide"`).
+   - Inyecta CSS personalizado (`st.markdown`) con una paleta de colores sofisticada: azul medianoche/marino profundo de fondo (`#0b132b`), acentos en azul eléctrico/turquesa (`#1c75bc`) y detalles dorados brillantes (`#d4af37`) para textos y bordes de tarjetas.
+   - Tipografía limpia y elegante, con títulos estilizados que simulen una galería de arte o repostería fina.
+
+2. **Barra Lateral (Sidebar) de Navegación y Filtros:**
+   - Menú de navegación con las secciones:
+     * 🌌 Inicio / Galería de Arte Dulce
+     * 🌊 Colección "Bajo el Mar"
+     * 🎨 Colección "Noche Estrellada (Van Gogh)"
+     * 🛒 Mi Reserva de Dulces (Carrito)
+     * ✉️ Encargos Personalizados & Contacto
+   - Filtros en la barra lateral:
+     * Filtrar por Colección (Van Gogh, Océano & Oro, Clásicos de Autor).
+     * Rango de precios.
+
+3. **Sección de Productos (Catálogo Artístico):**
+   - Muestra al menos 6 pasteles y creaciones hiper-creativas con descripciones poéticas, por ejemplo:
+     1. "La Noche Estrellada" (Torta de vainilla francesa con espejo de cacao azul y detalles de hoja de oro comestible).
+     2. "Abismo Marino" (Cheesecake de frutos azules con textura de olas en crema de mantequilla y perlas doradas).
+     3. "Girasoles de Arles" (Cupcakes de limón con decoraciones texturizadas estilo pintura al óleo).
+     4. "Tesoros del Océano" (Macarons franceses rellenos de ganache de chocolate blanco y sal marina con destellos dorados).
+     5. "Olas de Medianoche" (Torta de chocolate belga con cobertura degradada en tonos azules y acentos dorados abstractos).
+     6. "Cielo de Provenza" (Tartaleta de lavanda y arándanos con finas líneas de caramelo dorado).
+   - Cada producto debe mostrar: Nombre, Colección, Precio, una imagen representativa (puedes usar URLs de Unsplash con estética elegante o tonos azules/oscuros) y un botón de "Reservar Creación".
+
+4. **Funcionalidad del Carrito y Sistema de Pedidos:**
+   - Usa `st.session_state` para gestionar los productos agregados a la reserva.
+   - En la sección del Carrito, muestra la lista de postres seleccionados, el costo total y un formulario de reserva (Nombre, Fecha de recogida en tienda, y Notas especiales para la obra de arte comestible).
+   - Botón de "Confirmar Reserva" que active un mensaje de éxito con confeti (`st.balloons()`).
+
+5. **Buenas prácticas:**
+   - Código limpio, bien comentado y listo para ejecutarse con el comando `streamlit run app.py`.
+   - Excelente manejo de `st.session_state` para evitar la pérdida de datos al navegar entre pestañas o filtros.
